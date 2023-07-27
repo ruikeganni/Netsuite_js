@@ -1,0 +1,135 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Body>
+      <GetOrderListResponse xmlns="http://www.cdiscount.com">
+         <GetOrderListResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <ErrorMessage i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/Cdiscount.Framework.Core.Communication.Messages"/>
+            <OperationSuccess xmlns="http://schemas.datacontract.org/2004/07/Cdiscount.Framework.Core.Communication.Messages">true</OperationSuccess>
+            <ErrorList/>
+            <SellerLogin>login</SellerLogin>
+            <TokenId>???</TokenId>
+            <OrderList>
+               <Order>
+                  <ArchiveParcelList>false</ArchiveParcelList>
+                  <BillingAddress>
+                     <Address1 i:nil="true"/>
+                     <Address2 i:nil="true"/>
+                     <ApartmentNumber/>
+                     <Building/>
+                     <City>BORDEAUX</City>
+                     <Civility>MISS</Civility>
+                     <CompanyName i:nil="true"/>
+                     <Country>FR</Country>
+                     <County>N/A</County>
+                     <FirstName>Prénom</FirstName>
+                     <Instructions/>
+                     <LastName>Nom</LastName>
+                     <PlaceName/>
+                     <RelayId i:nil="true"/>
+                     <Street>126 Quai de Bacalan</Street>
+                     <ZipCode>33000</ZipCode>
+                  </BillingAddress>
+                 <Corporation>
+                     <BusinessUnitId>1</BusinessUnitId>
+                     <CorporationCode>CDSB2C</CorporationCode>
+                     <CorporationId>1</CorporationId>
+                     <CorporationName>Cdiscount</CorporationName>
+                     <IsMarketPlaceActive>true</IsMarketPlaceActive>
+                  </Corporation>
+                  <CreationDate>2011-07-26T12:38:31.35</CreationDate>
+                  <Customer>
+                     <Civility>MISS</Civility>
+                     <CustomerId>144a7211e0f420a43c208ec6706b1758</CustomerId>
+                     <Email i:nil="true"/>
+                     <EncryptedEmail>c.90757ca0-98d3-48bc-a5b9-c9f296101cf8@preprod-clemarche.com</EncryptedEmail>
+                     <FirstName>Prénom</FirstName>
+                     <LastName>Nom</LastName>
+                     <MobilePhone>0000000000</MobilePhone>
+                     <Phone/>
+                     <ShippingFirstName>Prénom</ShippingFirstName>
+                     <ShippingLastName>Nom</ShippingLastName>
+                     <Phone/>
+                  </Customer>
+                  <HasClaims>false</HasClaims>
+                  <InitialTotalAmount>3.7</InitialTotalAmount>
+                  <InitialTotalShippingChargesAmount>2.5</InitialTotalShippingChargesAmount>
+                  <IsCLogistiqueOrder>false</IsCLogistiqueOrder>
+                  <LastUpdatedDate>2011-10-21T07:18:14.327</LastUpdatedDate>
+                  <ModifiedDate>2011-07-26T12:39:43.21</ModifiedDate>
+                  <Offer i:nil="true"/>
+                  <OrderLineList>
+                     <OrderLine>
+                        <AcceptationState>ShippedBySeller</AcceptationState>
+                        <CategoryCode>06010701</CategoryCode>
+                        <DeliveryDateMax>2011-07-31T12:38:07.967</DeliveryDateMax>
+                        <DeliveryDateMin>2011-07-28T12:38:07.967</DeliveryDateMin>
+                        <HasClaim>false</HasClaim>
+                        <InitialPrice i:nil="true"/>
+                        <IsNegotiated i:nil="true"/>
+                        <Name i:nil="true"/>
+                        <OrderLineChildList/>
+                        <ProductCondition>New</ProductCondition>
+                        <ProductEan>0123456789123</ProductEan>
+                        <ProductId>3275054001106</ProductId>
+                        <PurchasePrice>1.2</PurchasePrice>
+                        <Quantity>1</Quantity>
+                        <RefundShippingCharges i:nil="true"/>
+                        <RowId>0</RowId>
+                        <SellerProductId>REF3275054001</SellerProductId>
+                        <ShippingDateMax>0001-01-01T00:00:00</ShippingDateMax>
+                        <ShippingDateMin>0001-01-01T00:00:00</ShippingDateMin>
+                        <Sku>3275054001106</Sku>
+                        <SkuParent i:nil="true"/>
+                        <UnitAdditionalShippingCharges>0.15</UnitAdditionalShippingCharges>
+                        <UnitShippingCharges>2.5</UnitShippingCharges>
+                     </OrderLine>
+                  </OrderLineList>
+                  <OrderNumber>1107261238TV3HA</OrderNumber>
+                  <OrderState>Shipped</OrderState>
+                  <ShippedTotalAmount>0</ShippedTotalAmount>
+                  <ShippedTotalShippingCharges>0</ShippedTotalShippingCharges>
+                 <ShippingAddress>
+                   <Address1 i:nil="true"/>
+                   <Address2 i:nil="true"/>
+                   <ApartmentNumber/>
+                   <Building/>
+                   <City>BORDEAUX</City>
+                   <Civility>MISS</Civility>
+                   <CompanyName i:nil="true"/>
+                   <Country>FR</Country>
+                   <County>N/A</County>
+                   <FirstName>Prénom</FirstName>
+                   <Instructions/>
+                   <LastName>Nom</LastName>
+                   <PlaceName/>
+                   <RelayId i:nil="true"/>
+                   <Street>126 Quai de Bacalan</Street>
+                   <ZipCode>33000</ZipCode>
+                 </ShippingAddress>
+                 <ShippingCode>STD</ShippingCode>
+                  <SiteCommissionPromisedAmount>0</SiteCommissionPromisedAmount>
+                  <SiteCommissionShippedAmount>0</SiteCommissionShippedAmount>
+                  <SiteCommissionValidatedAmount>0</SiteCommissionValidatedAmount>
+                  <Status>Completed</Status>
+                  <ValidatedTotalAmount>0</ValidatedTotalAmount>
+                  <ValidatedTotalShippingCharges>0</ValidatedTotalShippingCharges>
+                  <ValidationStatus>None</ValidationStatus>
+                  <VisaCegid>220</VisaCegid>
+                  <VoucherList>
+                     <Voucher>
+                       <CreateDate>2017-02-02T18:08:50.953</CreateDate>
+                       <RefundInformation>
+                         <Amount>10</Amount>
+                         <MotiveId>131</MotiveId>
+                       </RefundInformation>
+                       <Source>Seller</Source>
+                     </Voucher>
+                   </VoucherList>
+               </Order>
+               <Order>
+                  <OrderNumber>1107261238TV3HB</OrderNumber>
+               </Order>
+            </OrderList>
+         </GetOrderListResult>
+      </GetOrderListResponse>
+   </s:Body>
+</s:Envelope>

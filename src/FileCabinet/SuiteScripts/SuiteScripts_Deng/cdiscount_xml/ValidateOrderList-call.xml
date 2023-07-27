@@ -1,0 +1,42 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <ValidateOrderList xmlns="http://www.cdiscount.com">
+            <headerMessage xmlns:a="http://schemas.datacontract.org/2004/07/Cdiscount.Framework.Core.Communication.Messages" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:Context>
+                    <a:SiteID>100</a:SiteID>
+                </a:Context>
+                <a:Localization>
+                    <a:Country>Fr</a:Country>
+                </a:Localization>
+                <a:Security>
+                    <a:DomainRightsList i:nil="true" />
+                    <a:IssuerID i:nil="true" />
+                    <a:SessionID i:nil="true" />
+                    <a:SubjectLocality i:nil="true" />
+                    <a:TokenId>${token}</a:TokenId>
+                    <a:UserName i:nil="true" />
+                </a:Security>
+                <a:Version>1.0</a:Version>
+            </headerMessage>
+            <validateOrderListMessage xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <OrderList>
+                ${order}
+                    <!-- <ValidateOrder>
+                        <CarrierName>收货人姓名</CarrierName>
+                        <OrderLineList>
+                            <ValidateOrderLine>
+                                <AcceptationState>接收状态</AcceptationState>
+                                <ProductCondition>产品状态</ProductCondition>
+                                <SellerProductId>产品ID</SellerProductId>
+                            </ValidateOrderLine>
+                        </OrderLineList>
+                        <OrderNumber>订单编号</OrderNumber>
+                        <OrderState>订单状态: Shipped</OrderState>
+                        <TrackingNumber>物流跟踪好</TrackingNumber>
+                        <TrackingUrl>物流地址</TrackingUrl>
+                    </ValidateOrder> -->
+                </OrderList>
+            </validateOrderListMessage>
+        </ValidateOrderList>
+    </s:Body>
+</s:Envelope>

@@ -1,0 +1,43 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Body>
+        <GetOrderList xmlns="http://www.cdiscount.com">
+            <headerMessage xmlns:a="http://schemas.datacontract.org/2004/07/Cdiscount.Framework.Core.Communication.Messages" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <a:Context>
+                    <a:SiteID>100</a:SiteID>
+                </a:Context>
+                <a:Localization>
+                    <a:Country>Fr</a:Country>
+                </a:Localization>
+                <a:Security>
+                    <a:DomainRightsList i:nil="true" />
+                    <a:IssuerID i:nil="true" />
+                    <a:SessionID i:nil="true" />
+                    <a:SubjectLocality i:nil="true" />
+                    <a:TokenId>${token}</a:TokenId>
+                    <a:UserName i:nil="true" />
+                </a:Security>
+                <a:Version>1.0</a:Version>
+            </headerMessage>
+            <orderFilter xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <!-- <BeginCreationDate>2011-12-01T00:00:00.00</BeginCreationDate> -->
+                <BeginModificationDate>${BeginDateTime}</BeginModificationDate>
+                <!-- <EndCreationDate>2012-12-01T23:59:59.99</EndCreationDate> -->
+                <EndModificationDate>${EndDateTime}</EndModificationDate>
+                <FetchOrderLines>true</FetchOrderLines>
+                <States>
+                    <OrderStateEnum>CancelledByCustomer</OrderStateEnum>
+                    <OrderStateEnum>WaitingForSellerAcceptation</OrderStateEnum>
+                    <OrderStateEnum>AcceptedBySeller</OrderStateEnum>
+                    <OrderStateEnum>PaymentInProgress</OrderStateEnum>
+                    <OrderStateEnum>WaitingForShipmentAcceptation</OrderStateEnum>
+                    <OrderStateEnum>Shipped</OrderStateEnum>
+                    <OrderStateEnum>RefusedBySeller</OrderStateEnum>
+                    <OrderStateEnum>AutomaticCancellation</OrderStateEnum>
+                    <OrderStateEnum>PaymentRefused</OrderStateEnum>
+                    <OrderStateEnum>ShipmentRefusedBySeller</OrderStateEnum>
+                    <OrderStateEnum>RefusedNoShipment</OrderStateEnum>
+                </States>
+            </orderFilter>
+        </GetOrderList>
+    </s:Body>
+</s:Envelope>
